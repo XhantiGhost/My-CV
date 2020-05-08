@@ -1,0 +1,86 @@
+$primary-color: #272727;
+$secondary-color: #ff652f;
+
+:root {
+
+    /* font-family */
+    --ff-primary: 'times';
+    --ff-secondary: 'times2';
+
+    /* font-weight: ; */
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+
+    /* font sizes */
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    // box-shadow: ;
+
+    --bs: .25em .25em .75rem rgba(0,0,0,.25)
+}
+
+.intro__img {
+    box-shadow: var(--bs);
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.25rem;
+    }
+}
+
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #000;
+    
+    } @else {
+        @return #fff;
+    }
+}
+
+// @mixin media-md {
+//     @media screen and (min-width: 768px) {
+//         @content;
+//     }
+    
+// }
+
+// @mixin media-lg {
+//     @media screen and (min-width: 1024px) {
+//         @content;
+//     }
+    
+// }
+
+// @mixin media-xl {
+//     @media screen and (min-width: 1600px) {
+//         @content;
+//     }
+    
+// }

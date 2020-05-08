@@ -1,0 +1,27 @@
+@import 'config'; 
+@import 'typography';
+@import 'intro';
+@import 'services';
+@import 'about';
+
+body {
+    background: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.section__subtitle--intro {
+    display: inline-block;
+}
+
+// .container {
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 1024px;
+// }
+
+img {
+    display: block;
+    max-width: 100%;
+}
